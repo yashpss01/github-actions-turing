@@ -8,6 +8,7 @@ jobs:
       - name: clone repo
         uses: actions/checkout@v4
       - name: setup node version
-        uses : actions/setup-node@v
+        uses : actions/setup-node@v4
+        node-version: 20.x
       - name: run function.js
         run: node function.js 
