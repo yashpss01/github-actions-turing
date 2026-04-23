@@ -5,5 +5,7 @@ jobs:
   secWorkflow:
     runs-on: ubuntu-latest
     steps:
+      - name: clone repo
+        uses: actions/checkout@v4
       - name: run function.js
         run: node function.js 
