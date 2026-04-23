@@ -2,8 +2,11 @@ name: testing Workflow
 on:
   push:
 jobs:
-  secWorkflow:
+  test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
     steps:
       - name: clone repo
         uses: actions/checkout@v4
