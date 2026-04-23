@@ -1,0 +1,9 @@
+name: Second Workflow
+on:
+  push:
+jobs:
+  secWorkflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: run function.js
+        run: node function.js 
